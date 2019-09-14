@@ -1,6 +1,9 @@
 pci.ids (0.0~2019.09.14-1) UNRELEASED; urgency=medium
 
   * New upstream release
+  * Clarify copyright information in debian/copyright, after having contacted
+    upstream to get this included explicitly, and getting confirmation of the
+    information being correct.
 
  -- Guillem Jover <guillem@debian.org>  Sat, 14 Sep 2019 19:42:24 +0000
 
