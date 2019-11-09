@@ -3,6 +3,7 @@ pci.ids (0.0~2019.11.06-1) UNRELEASED; urgency=medium
   * New upstream release
   * Update copyright information after clarification from upstream in README
     file.
+  * Switch to Standards-Version 4.4.1 (no changes needed).
 
  -- Guillem Jover <guillem@debian.org>  Sat, 09 Nov 2019 13:42:20 +0100
 
