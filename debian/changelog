@@ -4,6 +4,10 @@ pci.ids (0.0~2019.11.06-1) UNRELEASED; urgency=medium
   * Update copyright information after clarification from upstream in README
     file.
   * Switch to Standards-Version 4.4.1 (no changes needed).
+  * Make updating the pciutils package easier until this gets ACCEPTED in
+    the Debian archive:
+    - Comment out Breaks until this package has been ACCEPTED.
+    - Switch Replaces version to 1:3.6.3~.
 
  -- Guillem Jover <guillem@debian.org>  Sat, 09 Nov 2019 13:42:20 +0100
 

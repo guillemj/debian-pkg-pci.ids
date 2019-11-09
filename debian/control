@@ -15,10 +15,10 @@ Architecture: all
 Multi-Arch: foreign
 Depends:
  ${misc:Depends},
-Breaks:
- pciutils (<< 1:3.6.2-3),
+#Breaks:
+# pciutils (<< 1:3.6.3~),
 Replaces:
- pciutils (<< 1:3.6.2-3),
+ pciutils (<< 1:3.6.3~),
 Description: PCI ID Repository
  This package contains the pci.ids file, a public repository of all known
  ID's used in PCI devices: ID's of vendors, devices, subsystems and device
