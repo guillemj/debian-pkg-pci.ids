@@ -4,18 +4,12 @@ Upstream-Contact: pci-admins@ucw.cz
 Files:
  *
 Copyright:
- Copyright © 1997-2019 Martin Mareš
- Copyright © 2015-2019 Albert Pool
+ Copyright © Martin Mareš
+ Copyright © Albert Pool
 License: GPL-2+ or BSD-3-clause
 Comment:
  This is a compilation of factual data, and as such the copyright only covers
- the aggregation and formatting. The upstream project does not currently list
- the copyright holders nor years, and the above information was synthesized
- from yearly archive.org snapshots of the website, which lists the maintainers.
- .
- Upstream has been contacted, and confirmed that these are the correct names,
- while Michal Vaner maintains the web interface which is unrelated, and that
- this information will be provided in the repository in the future.
+ the aggregation and formatting.
 
 License: GPL-2+
  This program is free software; you can redistribute it and/or modify
