@@ -1,9 +1,9 @@
-pci.ids (0.0~2019.11.06-2) UNRELEASED; urgency=medium
+pci.ids (0.0~2019.11.06-2) unstable; urgency=medium
 
   * Add Replaces and Breaks against pciutils 1:3.6.2-4~.
   * Compress installed pci.ids.
 
- -- Guillem Jover <guillem@debian.org>  Sun, 10 Nov 2019 11:27:12 +0100
+ -- Guillem Jover <guillem@debian.org>  Sun, 10 Nov 2019 11:33:11 +0100
 
 pci.ids (0.0~2019.11.06-1) unstable; urgency=medium
 
