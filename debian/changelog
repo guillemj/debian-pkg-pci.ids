@@ -1,9 +1,9 @@
-pci.ids (0.0~2019.11.10-2) UNRELEASED; urgency=medium
+pci.ids (0.0~2019.11.10-2) unstable; urgency=medium
 
   * Revert compression of installed pci.ids, based on a botched misreading
     of the pciutils code.
 
- -- Guillem Jover <guillem@debian.org>  Sun, 10 Nov 2019 23:23:24 +0100
+ -- Guillem Jover <guillem@debian.org>  Sun, 10 Nov 2019 23:24:41 +0100
 
 pci.ids (0.0~2019.11.10-1) unstable; urgency=medium
 
