@@ -1,3 +1,9 @@
+pci.ids (0.0~2019.11.26-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Guillem Jover <guillem@debian.org>  Fri, 29 Nov 2019 16:27:46 +0100
+
 pci.ids (0.0~2019.11.10-2) unstable; urgency=medium
 
   * Revert compression of installed pci.ids, based on a botched misreading
