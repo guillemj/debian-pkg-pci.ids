@@ -1,0 +1,83 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+my ($SELF) = $0 =~ m{(?:.*/)?([^/]*)};
+my $DEBUG = defined $ENV{PCI_IDS_DEBUG};
+my $PCIIDS = $ARGV[0] // '/usr/share/misc/pci.ids';
+
+sub error
+{
+    my (@args) = @_;
+
+    die "$SELF: @args\n";
+}
+
+sub debug
+{
+    my (@args) = @_;
+
+    print "@args\n" if $DEBUG;
+}
+
+sub check
+{
+    my $fh = shift;
+
+    my ($vendor, $device);
+    my ($class, $subclass);
+
+    while (<$fh>) {
+        next if m/^#/;
+        next if m/^\s*$/;
+
+        s/#.*$//;
+
+        if (m/^([0-9a-fA-F]{4})  (.*)$/) {
+            debug("Vendor ($1) ($2)");
+            $vendor = $1;
+            $device = undef;
+            $class = undef;
+            $subclass = undef;
+        } elsif (m/^\t([0-9a-fA-F]{4})  (.*)$/) {
+            if (not defined $vendor) {
+                error("Device defined not within a Vendor at line $.");
+            }
+            debug("Device ($1) ($2)");
+            $device = $1;
+        } elsif (m/^\t\t([0-9a-fA-F]{4}) ([0-9a-fA-F]{4})  (.*)$/) {
+            if (not defined $device) {
+                error("SubDevice defined not within a Device at line $.");
+            }
+            debug("SubVendor SubDevice ($1 $2) ($2)");
+        } elsif (m/^C ([0-9a-fA-F]{2})  (.*)$/) {
+            debug("Class ($1) ($2)");
+            $vendor = undef;
+            $device = undef;
+            $class = $1;
+            $subclass = undef;
+        } elsif (m/^\t([0-9a-fA-F]{2})  (.*)$/) {
+            if (not defined $class) {
+                error("SubClass defined not within a Class at line $.");
+            }
+            debug("SubClass ($1) ($2)");
+            $subclass = $1;
+        } elsif (m/^\t\t([0-9a-fA-F]{2})  (.*)$/) {
+            if (not defined $subclass) {
+                error("Programming Interface defined not within a SubClass at line $.");
+            }
+            debug("ProgIface ($1) ($2)");
+        } else {
+            error("Unknown entry in file at line $.");
+        }
+    }
+}
+
+open my $fh, '<', $PCIIDS or error("cannot open $PCIIDS database: $!");
+check($fh);
+close $fh;
+
+print "$SELF: Format of $PCIIDS is ok.\n";
+
+exit 0;

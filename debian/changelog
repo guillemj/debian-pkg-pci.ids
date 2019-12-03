@@ -1,6 +1,7 @@
 pci.ids (0.0~2019.12.01-1) UNRELEASED; urgency=medium
 
   * New upstream release
+  * Add a new autopkgtest that parses and validates the pci.ids database.
 
  -- Guillem Jover <guillem@debian.org>  Tue, 03 Dec 2019 00:03:38 +0000
 
