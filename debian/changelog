@@ -1,13 +1,13 @@
 pci.ids (0.0~2019.12.01-1) unstable; urgency=medium
 
-  * New upstream release
+  * New upstream release.
   * Add a new autopkgtest that parses and validates the pci.ids database.
 
  -- Guillem Jover <guillem@debian.org>  Tue, 03 Dec 2019 01:15:26 +0100
 
 pci.ids (0.0~2019.11.26-1) unstable; urgency=medium
 
-  * New upstream release
+  * New upstream release.
 
  -- Guillem Jover <guillem@debian.org>  Fri, 29 Nov 2019 16:27:46 +0100
 
@@ -20,7 +20,7 @@ pci.ids (0.0~2019.11.10-2) unstable; urgency=medium
 
 pci.ids (0.0~2019.11.10-1) unstable; urgency=medium
 
-  * New upstream release
+  * New upstream release.
 
  -- Guillem Jover <guillem@debian.org>  Sun, 10 Nov 2019 15:56:43 +0100
 
@@ -33,7 +33,7 @@ pci.ids (0.0~2019.11.06-2) unstable; urgency=medium
 
 pci.ids (0.0~2019.11.06-1) unstable; urgency=medium
 
-  * New upstream release
+  * New upstream release.
   * Update copyright information after clarification from upstream in README
     file.
   * Switch to Standards-Version 4.4.1 (no changes needed).
@@ -46,7 +46,7 @@ pci.ids (0.0~2019.11.06-1) unstable; urgency=medium
 
 pci.ids (0.0~2019.09.14-1) unstable; urgency=medium
 
-  * New upstream release
+  * New upstream release.
   * Clarify copyright information in debian/copyright, after having contacted
     upstream to get this included explicitly, and getting confirmation of the
     information being correct.
