@@ -1,3 +1,9 @@
+pci.ids (0.0~2020.03.20-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Guillem Jover <guillem@debian.org>  Sun, 22 Mar 2020 02:44:05 +0100
+
 pci.ids (0.0~2020.02.22-1) unstable; urgency=medium
 
   * New upstream release.
