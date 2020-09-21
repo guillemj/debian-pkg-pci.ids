@@ -11,7 +11,7 @@ sub error
 {
     my (@args) = @_;
 
-    die "$SELF: @args\n";
+    die "$SELF: @args: FAIL\n";
 }
 
 sub debug
@@ -78,6 +78,6 @@ open my $fh, '<', $PCIIDS or error("cannot open $PCIIDS database: $!");
 check($fh);
 close $fh;
 
-print "$SELF: Format of $PCIIDS is ok.\n";
+print "$SELF: format of $PCIIDS is ok: PASS\n";
 
 exit 0;
