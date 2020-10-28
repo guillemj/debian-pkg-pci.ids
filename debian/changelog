@@ -1,3 +1,11 @@
+pci.ids (0.0~2020.10.25-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Update descriptions for PCI IDs 1002:3e50 and 1002:3e70 to list also
+      ATI Radeon model X550. Closes: #537963
+
+ -- Guillem Jover <guillem@debian.org>  Wed, 28 Oct 2020 10:04:53 +0100
+
 pci.ids (0.0~2020.09.21-1) unstable; urgency=medium
 
   * New upstream release.
