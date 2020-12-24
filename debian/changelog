@@ -1,9 +1,9 @@
-pci.ids (0.0~2020.12.23-1) UNRELEASED; urgency=medium
+pci.ids (0.0~2020.12.23-1) unstable; urgency=medium
 
   * New upstream release.
   * Switch to Standards-Version 4.5.1 (no changes needed).
 
- -- Guillem Jover <guillem@debian.org>  Sat, 28 Nov 2020 20:07:13 +0100
+ -- Guillem Jover <guillem@debian.org>  Thu, 24 Dec 2020 18:24:20 +0100
 
 pci.ids (0.0~2020.10.25-1) unstable; urgency=medium
 
