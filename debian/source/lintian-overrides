@@ -1,0 +1,4 @@
+# Upstream does not sign releases.
+pci.ids: debian-watch-does-not-check-openpgp-signature [debian/watch]
+# debhelper handles this automatically, false positive.
+pci.ids: override_dh_auto_test-does-not-check-DEB_BUILD_OPTIONS [debian/rules:*]

@@ -4,6 +4,7 @@ pci.ids (0.0~2022.08.07-2) UNRELEASED; urgency=medium
     iso8859-15 as if they were utf-8.
   * Restore copyright years in debian/copyright file.
   * Add upstream metadata file.
+  * Add lintian overrides for false-positives.
 
  -- Guillem Jover <guillem@debian.org>  Sun, 09 Oct 2022 19:04:30 +0200
 
