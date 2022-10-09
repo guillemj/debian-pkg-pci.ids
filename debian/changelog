@@ -2,6 +2,7 @@ pci.ids (0.0~2022.08.07-2) UNRELEASED; urgency=medium
 
   * Fix encoding issues in pci.ids. The database had characters encoded as
     iso8859-15 as if they were utf-8.
+  * Restore copyright years in debian/copyright file.
 
  -- Guillem Jover <guillem@debian.org>  Sun, 09 Oct 2022 19:04:30 +0200
 
