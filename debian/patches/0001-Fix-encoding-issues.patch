@@ -1,17 +1,18 @@
-From f8932ff65a06d8698a74a2bbaf6b00e9c234ad4d Mon Sep 17 00:00:00 2001
+From 9ca02978d38815ff13e34cb39c866af6df100ad7 Mon Sep 17 00:00:00 2001
 From: Guillem Jover <guillem@hadrons.org>
 Date: Tue, 4 Oct 2022 04:40:23 +0200
 Subject: [PATCH] Fix encoding issues
-Forwarded: yes
 
 These characters got reencoded as iso8859-1 into utf-8.
 ---
- pci.ids |   40 ++++++++++++++++++++--------------------
+ pci.ids | 40 ++++++++++++++++++++--------------------
  1 file changed, 20 insertions(+), 20 deletions(-)
 
+diff --git a/pci.ids b/pci.ids
+index d4a4ce2..c3b906a 100644
 --- a/pci.ids
 +++ b/pci.ids
-@@ -2708,7 +2708,7 @@
+@@ -2709,7 +2709,7 @@
  # FX-797A-TNBC
  		1682 3213  HD 7970 Black Edition
  		1682 3214  Double D HD 7970
@@ -20,7 +21,7 @@ These characters got reencoded as iso8859-1 into utf-8.
  # Radeon HD 7970 X2
  		1787 2317  Radeon HD 7990
  		1787 3000  Tahiti XT2 [Radeon HD 7970 GHz Edition]
-@@ -2771,7 +2771,7 @@
+@@ -2772,7 +2772,7 @@
  		174b e282  Vapor-X R9 290X Tri-X OC
  		174b e285  R9 290X Tri-X OC
  		174b e324  Grenada XT2 [Radeon R9 390X]
@@ -29,7 +30,7 @@ These characters got reencoded as iso8859-1 into utf-8.
  		1787 2357  Grenada XT [Radeon R9 390X]
  	67b1  Hawaii PRO [Radeon R9 290/390]
  		1043 04dd  STRIX R9 390
-@@ -3662,7 +3662,7 @@
+@@ -3663,7 +3663,7 @@
  		1002 0322  All-in-Wonder X1800XL
  		1002 0d02  Radeon X1800 CrossFire Edition
  	710a  R520 [Radeon X1800 GTO]
@@ -38,7 +39,7 @@ These characters got reencoded as iso8859-1 into utf-8.
  	710b  R520 [Radeon X1800 GTO]
  	710e  R520 GL [FireGL V7300]
  		13cc 3d0c  MXRT-5150
-@@ -7412,7 +7412,7 @@
+@@ -7430,7 +7430,7 @@
  		1077 02f2  QLogic 1x32Gb QLE2770 FC HBA
  		1077 02f3  QLogic 2x32Gb QLE2772 FC HBA
  		1590 02d3  SN1610Q - 1P Enhanced 32GFC Single Port Fibre Channel Host Bus Adapter
@@ -47,7 +48,7 @@ These characters got reencoded as iso8859-1 into utf-8.
  	2289  ISP2852-based 64/32G Fibre Channel to PCIe Controller with StorCryption
  		1077 02e9  QLE2882 Dual Port 64GFC PCIe Gen4 x8 Adapter with StorCryption
  		1077 02eb  QLE2782 Dual Port 32GFC PCIe Gen4 x8 Adapter with StorCryption
-@@ -13099,7 +13099,7 @@
+@@ -13122,7 +13122,7 @@
  		10ec 8739  Dell Wireless 1801
  		17aa b736  Z50-75
  	b822  RTL8822BE 802.11a/b/g/n/ac WiFi adapter
@@ -56,7 +57,7 @@ These characters got reencoded as iso8859-1 into utf-8.
  		17aa 5124  ThinkPad E595
  		17aa b023  ThinkPad E595
  	c821  RTL8821CE 802.11ac PCIe Wireless Network Adapter
-@@ -21120,10 +21120,10 @@
+@@ -21144,10 +21144,10 @@
  		193d 1084  NIC-ETH540F-3S-2P
  	1016  MT27710 Family [ConnectX-4 Lx Virtual Function]
  	1017  MT27800 Family [ConnectX-5]
@@ -71,7 +72,7 @@ These characters got reencoded as iso8859-1 into utf-8.
  		193d 1051  NIC-IB1040i-Mb-2P
  	1018  MT27800 Family [ConnectX-5 Virtual Function]
  	1019  MT28800 Family [ConnectX-5 Ex]
-@@ -21319,7 +21319,7 @@
+@@ -21343,7 +21343,7 @@
  15cd  Dreamtech Co Ltd
  15ce  Genrad Inc
  # https://www.hilscher.com/imprint/
@@ -80,7 +81,7 @@ These characters got reencoded as iso8859-1 into utf-8.
  	0000  CIFX PCI/PCIe
  15d1  Infineon Technologies AG
  15d2  FIC (First International Computer Inc)
-@@ -21789,14 +21789,14 @@
+@@ -21813,14 +21813,14 @@
  	002e  AR9287 Wireless Network Adapter (PCI-Express)
  		105b e034  T77H167.00
  	0030  AR93xx Wireless Network Adapter
@@ -97,7 +98,7 @@ These characters got reencoded as iso8859-1 into utf-8.
  		105b e044  Unex DHXA-225
  		144d 410e  AR9485WB-EG 802.11b/g/n mini-PCIe card on a series 3 laptop
  		1a3b 1186  AW-NE186H
-@@ -24992,13 +24992,13 @@
+@@ -25018,13 +25018,13 @@
  	1203  NVMe SSD Controller UHXXXa series
  		1e81 a121  NVMe SSD UHXXXa series U.2 960GB
  		1e81 a122  NVMe SSD UHXXXa series U.2 1920GB
@@ -117,7 +118,7 @@ These characters got reencoded as iso8859-1 into utf-8.
  		1e81 f123  NVMe SSD TP6500 series U.2 3840GB
  1e85  Heitec AG
  1e89  ID Quantique SA
-@@ -30378,7 +30378,7 @@
+@@ -30407,7 +30407,7 @@
  		8086 3904  NVMe Datacenter SSD [Optane] x4 AIC (P4800X)
  		8086 3905  NVMe Datacenter SSD [Optane] 15mm 2.5" U.2 (P4800X)
  	2723  Wi-Fi 6 AX200
@@ -126,7 +127,7 @@ These characters got reencoded as iso8859-1 into utf-8.
  		8086 0084  Wi-Fi 6 AX200NGW
  	2725  Wi-Fi 6 AX210/AX211/AX411 160MHz
  		8086 0020  Wi-Fi 6 AX210 160MHz
-@@ -35094,7 +35094,7 @@
+@@ -35142,7 +35142,7 @@
  # 2-port Serial 1-port Parallel Adaptor
  	9912  PCIe 9912 Multi-I/O Controller
  	9922  MCS9922 PCIe Multi-I/O Controller
@@ -135,3 +136,6 @@ These characters got reencoded as iso8859-1 into utf-8.
  # Subsystem ID on a 3c985B-SX network card
  9850  3Com (wrong ID)
  9902  Stargen Inc.
+-- 
+2.38.1
+
