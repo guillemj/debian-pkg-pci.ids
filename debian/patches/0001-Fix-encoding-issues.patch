@@ -1,4 +1,4 @@
-From 9df0a24cccffa6dda25779737580050e04344863 Mon Sep 17 00:00:00 2001
+From 54ebcb24b2bece21f0e19daae7351b4bde5184d8 Mon Sep 17 00:00:00 2001
 From: Guillem Jover <guillem@hadrons.org>
 Date: Tue, 4 Oct 2022 04:40:23 +0200
 Subject: [PATCH] Fix encoding issues
@@ -9,7 +9,7 @@ These characters got reencoded as iso8859-1 into utf-8.
  1 file changed, 20 insertions(+), 20 deletions(-)
 
 diff --git a/pci.ids b/pci.ids
-index 357a104..3320736 100644
+index 9bdbd00..9037fce 100644
 --- a/pci.ids
 +++ b/pci.ids
 @@ -2709,7 +2709,7 @@
@@ -39,7 +39,7 @@ index 357a104..3320736 100644
  	710b  R520 [Radeon X1800 GTO]
  	710e  R520 GL [FireGL V7300]
  		13cc 3d0c  MXRT-5150
-@@ -7438,7 +7438,7 @@
+@@ -7440,7 +7440,7 @@
  		1077 02f2  QLogic 1x32Gb QLE2770 FC HBA
  		1077 02f3  QLogic 2x32Gb QLE2772 FC HBA
  		1590 02d3  SN1610Q - 1P Enhanced 32GFC Single Port Fibre Channel Host Bus Adapter
@@ -48,7 +48,7 @@ index 357a104..3320736 100644
  	2289  ISP2852-based 64/32G Fibre Channel to PCIe Controller with StorCryption
  		1077 02e9  QLE2882 Dual Port 64GFC PCIe Gen4 x8 Adapter with StorCryption
  		1077 02eb  QLE2782 Dual Port 32GFC PCIe Gen4 x8 Adapter with StorCryption
-@@ -13135,7 +13135,7 @@
+@@ -13138,7 +13138,7 @@
  		10ec 8739  Dell Wireless 1801
  		17aa b736  Z50-75
  	b822  RTL8822BE 802.11a/b/g/n/ac WiFi adapter
@@ -57,7 +57,7 @@ index 357a104..3320736 100644
  		17aa 5124  ThinkPad E595
  		17aa b023  ThinkPad E595
  	c821  RTL8821CE 802.11ac PCIe Wireless Network Adapter
-@@ -21166,10 +21166,10 @@
+@@ -21169,10 +21169,10 @@
  		193d 1084  NIC-ETH540F-3S-2P
  	1016  MT27710 Family [ConnectX-4 Lx Virtual Function]
  	1017  MT27800 Family [ConnectX-5]
@@ -72,7 +72,7 @@ index 357a104..3320736 100644
  		193d 1051  NIC-IB1040i-Mb-2P
  	1018  MT27800 Family [ConnectX-5 Virtual Function]
  	1019  MT28800 Family [ConnectX-5 Ex]
-@@ -21365,7 +21365,7 @@
+@@ -21368,7 +21368,7 @@
  15cd  Dreamtech Co Ltd
  15ce  Genrad Inc
  # https://www.hilscher.com/imprint/
@@ -81,7 +81,7 @@ index 357a104..3320736 100644
  	0000  CIFX PCI/PCIe
  15d1  Infineon Technologies AG
  15d2  FIC (First International Computer Inc)
-@@ -21836,14 +21836,14 @@
+@@ -21839,14 +21839,14 @@
  	002e  AR9287 Wireless Network Adapter (PCI-Express)
  		105b e034  T77H167.00
  	0030  AR93xx Wireless Network Adapter
@@ -98,7 +98,7 @@ index 357a104..3320736 100644
  		105b e044  Unex DHXA-225
  		144d 410e  AR9485WB-EG 802.11b/g/n mini-PCIe card on a series 3 laptop
  		1a3b 1186  AW-NE186H
-@@ -25068,13 +25068,13 @@
+@@ -25071,13 +25071,13 @@
  	1203  NVMe SSD Controller UHXXXa series
  		1e81 a121  NVMe SSD UHXXXa series U.2 960GB
  		1e81 a122  NVMe SSD UHXXXa series U.2 1920GB
@@ -116,9 +116,9 @@ index 357a104..3320736 100644
 +		1e81 a213  NVMe SSD UHXXXa series U.2 3200GB
 +		1e81 a214  NVMe SSD UHXXXa series U.2 6400GB
  		1e81 f123  NVMe SSD TP6500 series U.2 3840GB
+ 1e83  Huaqin Technology Co.Ltd
  1e85  Heitec AG
- 1e89  ID Quantique SA
-@@ -30475,7 +30475,7 @@
+@@ -30480,7 +30480,7 @@
  		8086 3904  NVMe Datacenter SSD [Optane] x4 AIC (P4800X)
  		8086 3905  NVMe Datacenter SSD [Optane] 15mm 2.5" U.2 (P4800X)
  	2723  Wi-Fi 6 AX200
@@ -127,7 +127,7 @@ index 357a104..3320736 100644
  		8086 0084  Wi-Fi 6 AX200NGW
  	2725  Wi-Fi 6 AX210/AX211/AX411 160MHz
  		8086 0020  Wi-Fi 6 AX210 160MHz
-@@ -35215,7 +35215,7 @@
+@@ -35221,7 +35221,7 @@
  # 2-port Serial 1-port Parallel Adaptor
  	9912  PCIe 9912 Multi-I/O Controller
  	9922  MCS9922 PCIe Multi-I/O Controller
