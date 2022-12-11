@@ -1,3 +1,10 @@
+pci.ids (0.0~2022.12.04-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Refresh patch.
+
+ -- Guillem Jover <guillem@debian.org>  Sun, 11 Dec 2022 23:09:21 +0100
+
 pci.ids (0.0~2022.11.30-1) unstable; urgency=medium
 
   * New upstream release.

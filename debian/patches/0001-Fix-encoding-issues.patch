@@ -5,11 +5,9 @@ Subject: [PATCH] Fix encoding issues
 
 These characters got reencoded as iso8859-1 into utf-8.
 ---
- pci.ids | 40 ++++++++++++++++++++--------------------
+ pci.ids |   40 ++++++++++++++++++++--------------------
  1 file changed, 20 insertions(+), 20 deletions(-)
 
-diff --git a/pci.ids b/pci.ids
-index 9bdbd00..9037fce 100644
 --- a/pci.ids
 +++ b/pci.ids
 @@ -2709,7 +2709,7 @@
@@ -48,7 +46,7 @@ index 9bdbd00..9037fce 100644
  	2289  ISP2852-based 64/32G Fibre Channel to PCIe Controller with StorCryption
  		1077 02e9  QLE2882 Dual Port 64GFC PCIe Gen4 x8 Adapter with StorCryption
  		1077 02eb  QLE2782 Dual Port 32GFC PCIe Gen4 x8 Adapter with StorCryption
-@@ -13138,7 +13138,7 @@
+@@ -13141,7 +13141,7 @@
  		10ec 8739  Dell Wireless 1801
  		17aa b736  Z50-75
  	b822  RTL8822BE 802.11a/b/g/n/ac WiFi adapter
@@ -57,7 +55,7 @@ index 9bdbd00..9037fce 100644
  		17aa 5124  ThinkPad E595
  		17aa b023  ThinkPad E595
  	c821  RTL8821CE 802.11ac PCIe Wireless Network Adapter
-@@ -21169,10 +21169,10 @@
+@@ -21174,10 +21174,10 @@
  		193d 1084  NIC-ETH540F-3S-2P
  	1016  MT27710 Family [ConnectX-4 Lx Virtual Function]
  	1017  MT27800 Family [ConnectX-5]
@@ -72,7 +70,7 @@ index 9bdbd00..9037fce 100644
  		193d 1051  NIC-IB1040i-Mb-2P
  	1018  MT27800 Family [ConnectX-5 Virtual Function]
  	1019  MT28800 Family [ConnectX-5 Ex]
-@@ -21368,7 +21368,7 @@
+@@ -21373,7 +21373,7 @@
  15cd  Dreamtech Co Ltd
  15ce  Genrad Inc
  # https://www.hilscher.com/imprint/
@@ -81,7 +79,7 @@ index 9bdbd00..9037fce 100644
  	0000  CIFX PCI/PCIe
  15d1  Infineon Technologies AG
  15d2  FIC (First International Computer Inc)
-@@ -21839,14 +21839,14 @@
+@@ -21844,14 +21844,14 @@
  	002e  AR9287 Wireless Network Adapter (PCI-Express)
  		105b e034  T77H167.00
  	0030  AR93xx Wireless Network Adapter
@@ -98,7 +96,7 @@ index 9bdbd00..9037fce 100644
  		105b e044  Unex DHXA-225
  		144d 410e  AR9485WB-EG 802.11b/g/n mini-PCIe card on a series 3 laptop
  		1a3b 1186  AW-NE186H
-@@ -25071,13 +25071,13 @@
+@@ -25081,13 +25081,13 @@
  	1203  NVMe SSD Controller UHXXXa series
  		1e81 a121  NVMe SSD UHXXXa series U.2 960GB
  		1e81 a122  NVMe SSD UHXXXa series U.2 1920GB
@@ -118,7 +116,7 @@ index 9bdbd00..9037fce 100644
  		1e81 f123  NVMe SSD TP6500 series U.2 3840GB
  1e83  Huaqin Technology Co.Ltd
  1e85  Heitec AG
-@@ -30480,7 +30480,7 @@
+@@ -30490,7 +30490,7 @@
  		8086 3904  NVMe Datacenter SSD [Optane] x4 AIC (P4800X)
  		8086 3905  NVMe Datacenter SSD [Optane] 15mm 2.5" U.2 (P4800X)
  	2723  Wi-Fi 6 AX200
@@ -127,7 +125,7 @@ index 9bdbd00..9037fce 100644
  		8086 0084  Wi-Fi 6 AX200NGW
  	2725  Wi-Fi 6 AX210/AX211/AX411 160MHz
  		8086 0020  Wi-Fi 6 AX210 160MHz
-@@ -35221,7 +35221,7 @@
+@@ -35231,7 +35231,7 @@
  # 2-port Serial 1-port Parallel Adaptor
  	9912  PCIe 9912 Multi-I/O Controller
  	9922  MCS9922 PCIe Multi-I/O Controller
@@ -136,6 +134,3 @@ index 9bdbd00..9037fce 100644
  # Subsystem ID on a 3c985B-SX network card
  9850  3Com (wrong ID)
  9902  Stargen Inc.
--- 
-2.38.1
-
