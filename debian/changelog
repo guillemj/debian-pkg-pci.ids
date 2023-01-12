@@ -1,3 +1,9 @@
+pci.ids (0.0~2023.01.06-2) UNRELEASED; urgency=medium
+
+  * Update copyright years.
+
+ -- Guillem Jover <guillem@debian.org>  Thu, 12 Jan 2023 23:49:15 +0100
+
 pci.ids (0.0~2023.01.06-1) unstable; urgency=medium
 
   * New upstream release.
