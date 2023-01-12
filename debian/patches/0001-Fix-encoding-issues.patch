@@ -1,6 +1,8 @@
 From ccfee565280cabd66b63dafea8b0aff2b896630d Mon Sep 17 00:00:00 2001
 From: Guillem Jover <guillem@hadrons.org>
 Date: Tue, 4 Oct 2022 04:40:23 +0200
+Origin: vendor
+Forwarded: yes
 Subject: [PATCH] Fix encoding issues
 
 These characters got reencoded as iso8859-1 into utf-8.
