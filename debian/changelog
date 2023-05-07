@@ -1,3 +1,10 @@
+pci.ids (0.0~2023.04.11-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Remove patch, fixed upstream.
+
+ -- Guillem Jover <guillem@debian.org>  Sun, 07 May 2023 02:10:00 +0200
+
 pci.ids (0.0~2023.03.17-1) unstable; urgency=medium
 
   * New upstream release.
