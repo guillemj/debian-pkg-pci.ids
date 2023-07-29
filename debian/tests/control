@@ -1,1 +1,2 @@
-Tests: test-db-format
+Tests:
+ test-db-format
