@@ -1,6 +1,5 @@
 Source: pci.ids
 Section: admin
-Priority: optional
 Maintainer: Guillem Jover <guillem@debian.org>
 Homepage: https://pci-ids.ucw.cz/
 Standards-Version: 4.7.2
