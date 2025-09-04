@@ -2,7 +2,7 @@ pci.ids (0.0~2025.07.11-1) unstable; urgency=medium
 
   * New upstream release.
   * Remove «Rules-Requires-Root: no», which is the current default.
-  * Remove «Priority: optional» field, which is the current default.
+  * Remove «Priority: optional», which is the current default.
   * Remove obsolete Breaks and Replaces against pciutils.
 
  -- Guillem Jover <guillem@debian.org>  Sun, 10 Aug 2025 15:00:16 +0200
