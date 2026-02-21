@@ -1,8 +1,9 @@
-pci.ids (0.0~2026.02.12-2) UNRELEASED; urgency=medium
+pci.ids (0.0~2026.02.21-1) unstable; urgency=medium
 
+  * New upstream release.
   * Remove lintian overrides that no longer get emitted.
 
- -- Guillem Jover <guillem@debian.org>  Sat, 21 Feb 2026 03:29:59 +0100
+ -- Guillem Jover <guillem@debian.org>  Sat, 21 Feb 2026 03:32:02 +0100
 
 pci.ids (0.0~2026.02.12-1) unstable; urgency=medium
 
