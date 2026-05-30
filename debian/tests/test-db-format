@@ -6,24 +6,18 @@ my ($SELF) = $0 =~ m{(?:.*/)?([^/]*)};
 my $DEBUG = defined $ENV{PCI_IDS_DEBUG};
 my $PCIIDS = $ARGV[0] // '/usr/share/misc/pci.ids';
 
-sub error
+sub error(@args)
 {
-    my (@args) = @_;
-
     die "$SELF: @args: FAIL\n";
 }
 
-sub debug
+sub debug(@args)
 {
-    my (@args) = @_;
-
     print "@args\n" if $DEBUG;
 }
 
-sub check
+sub check($fh)
 {
-    my $fh = shift;
-
     my ($vendor, $device);
     my ($class, $subclass);
 
